@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="walking_arena_1d" name="bg_finder" type="bg_finder_node.py">
+        <param name="update_dt" type="double" value="0.2"/>
+        <param name="output_file" type="str" value="$(env HOME)/work/walking_arena_1d_launch/bg_image.npy"/>
+    </node>
+</launch>

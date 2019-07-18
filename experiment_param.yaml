@@ -1,0 +1,136 @@
+
+food_width: 10 
+food_height: 20
+pretrial_duration: 6.0
+experiment_duration: 1800.0
+posttrial_duration: 600.0
+bg_image_file: '/home/fponce/work/walking_arena_1d_launch/bg_image.npy'
+
+tracking:
+    threshold: 20
+    min_area: 2
+    max_area: 1000
+
+scheduler_base_params: 
+    led_dev_num : 0
+    led_on_value : 255 
+    led_off_value : 0 
+    led_on_duration : 1.0 
+    led_minimum_off_duration: 9.0 
+
+
+# Tracking regions r1, ... r11
+# -------------------------------------------------------
+
+regions:
+
+    -  # region 1
+
+        led_pin: 13
+        food_pos: [327,17]
+        roi:
+            x_min: -1 
+            x_max: -1 
+            y_min: 1
+            y_max: 39
+    
+    -  # region 2
+
+        led_pin: 14
+        food_pos: [327,66]
+        roi:
+            x_min: -1
+            x_max: -1 
+            y_min: 39
+            y_max: 88
+        
+    -  # region 3
+
+        led_pin: 15
+        food_pos: [327,110]
+        roi:
+            x_min: -1 
+            x_max: -1 
+            y_min: 88
+            y_max: 134
+        
+    -  # region 4
+
+        led_pin: 16
+        food_pos: [327,164]
+        roi:
+            x_min: -1 
+            x_max: -1 
+            y_min: 134
+            y_max: 186
+
+    -  # region 5
+
+        led_pin: 17
+        food_pos: [327,210]
+        roi:
+            x_min: -1 
+            x_max: -1 
+            y_min: 186
+            y_max: 232
+        
+    -  # region 6
+
+        led_pin: 18
+        food_pos: [327,261]
+        roi:
+            x_min: -1 
+            x_max: -1 
+            y_min: 232
+            y_max: 280
+
+    -  # region 7
+
+        led_pin: 19
+        food_pos: [327,311]
+        roi:
+            x_min: -1 
+            x_max: -1 
+            y_min: 280
+            y_max: 330
+        
+    -  # region 8
+
+        led_pin: 20
+        food_pos: [327,359]
+        roi:
+            x_min: -1 
+            x_max: -1 
+            y_min: 330
+            y_max: 377
+                
+    -  # region 9
+
+        led_pin: 21
+        food_pos: [327,407]
+        roi:
+            x_min: -1 
+            x_max: -1 
+            y_min: 377
+            y_max: 427
+
+    -  # region 10 
+
+        led_pin: 22
+        food_pos: [327,456]
+        roi:
+            x_min: -1 
+            x_max: -1 
+            y_min: 427
+            y_max: 472
+
+    -  # region 11  
+
+        led_pin: 23
+        food_pos: [327,507]
+        roi:
+            x_min: -1 
+            x_max: -1 
+            y_min: 472
+            y_max: 529
+

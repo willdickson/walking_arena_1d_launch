@@ -1,0 +1,12 @@
+<launch>
+
+<rosparam command="load" file="./experiment_param.yaml"/> 
+
+<?ignore <include file="./pgr_camera.launch"/> ?>
+
+<include file="./led_pwm.launch"/>  
+
+<?ignore <include file="./start_logging.launch"> ?>
+
+</launch>
+

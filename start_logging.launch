@@ -1,0 +1,9 @@
+<launch>
+    <!-- <node pkg="rosbag" name="experiment_logger" type="record" args="record -o /home/fponce/catkin_ws/src/muti_tracker/examples/demo/tracker/tracker_data/path_integration /path_integration_data /led_pwm_info /multi_tracker/1/tracked_objects" > -->
+
+    <arg name="ns_name" default="r1"/>
+
+    <node pkg="rosbag" name="experiment_logger" type="record" args="record -o /home/fponce/demo/tracker/tracker_data/$(arg ns_name)/path_integration /$(arg ns_name)/path_integration_data /$(arg ns_name)/led_pwm_info /multi_tracker/$(arg ns_name)/tracked_objects" >
+    </node>
+
+</launch>
